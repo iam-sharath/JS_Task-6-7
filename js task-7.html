@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+  // <<<<  For In Loop >>>>
+  // we can iterate an object by 'for in' loop
+(1.) 
+ bikes = {
+    tvs   :"apache",
+    hero  :"glamour",
+    bajaj :"ns 200",
+    yamaha:"royal enfield",
+   yamaha:{
+        name  :"hunter",
+        model :2023,
+        color :"blue",
+    }
+    
+}
+console.log(bikes)
+console.log(" ")
+   for(let key in bikes){
+  // console.log(key);
+ // console.log(bikes[key]);
+    console.log(`${key} : ${[bikes[key]]}`)
+   }
+console.log(" ")
+
+
+
+//(2.)
+//we can loop, all the characters of string using 'for in'
+
+let demo  ="JavaScript For In"
+for(let loop in demo){
+    console.log(demo[loop])
+}
+console.log(" ")
+
+ </script>
+
+
+ <script>
+    // <<< For Of Loop >>>
+//(1.)
+colors = ["red","green","yellow","blue"]
+for(let name of colors){
+    console.log(name);
+}
+
+console.log(" ")
+
+ let demo1  ="JavaScript For In"
+ for(let char of demo1){
+    console.log(char)
+ }
+
+ console.log(" ")
+
+
+bikes = {
+    tvs   :"apache",
+    hero  :"glamour",
+    bajaj :"ns 200",
+    yamaha:"royal enfield"}
+    for(let bike of Object.keys(bikes)){
+        console.log(bike)
+    }
+ </script>
+ <script>
+//    // ************Difference****************
+
+   const array=[1,2,3,4,5,6,"seven"]
+   for(let a in array){
+    console.log(a) // it prints index numbers of array values
+   }
+
+console.log(" ")
+
+   for(let b of array){
+    console.log(b) // It prints values of array
+   }
+
+
+ </script>
+<h3>"for of" used to iterate over the values in an iterable object,Such as an array or a string.
+## It allows you to access the values of the object directly,without to use an index.
+</h3>
+<h3>
+"for in"  is used to iterate over the enumerable properties of an object. 
+## It allows you to access the keys of the object,rather than the values
+</h3>
+
+<h3>for-of for (array,string,map,set) to iterate over values</h3>
+<h3>for-in for an array to iterate over a key and also for objects to enumerate its properties</h3>
+
+<h2> 
+    FOR-IN ==>Array -> Index
+            ==>Object ->Keys
+    <br>
+    FOR-OF  ==> Array,String,Map,Set -> Values         
+</h2>
+</body>
+</html
